@@ -1,0 +1,33 @@
+#Installable
+go get -u -v github.com/tomnomnom/assetfinder
+GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
+GO111MODULE=on go get -u -v github.com/lc/subjs
+go get -u -v github.com/anshumanbh/tko-subs
+go get -u -v github.com/tomnomnom/waybackurls
+go get -v -u github.com/tomnomnom/meg
+GO111MODULE=on go get -u -v github.com/lc/gau
+GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+go get -u -v github.com/hakluke/hakrevdns
+go get -u -v github.com/hakluke/hakrawler
+go get -u -v github.com/anshumanbh/tko-subs
+go get -u -v github.com/haccer/subjack
+apt install ffuf sublist3r libldns-dev -y
+pip3 install dnsgen
+cargo install findomain
+#Github
+cd /root/MachineYadav/Softwares/ 
+	cd Arjun && gitfp && cd ..
+	cd CORStest && gitfp && cd ..
+	cd Dnsvalidator && gitfp && python3 setup.py install && cd .. 
+	cd Interlace && gitfp && python3 setup.py install && cd ..
+	cd JS2PDFInjector && gitfp && cd ..
+	cd Massdns && gitfp && make && make install && cd ..
+	cd NoSQLMap && gitfp && cd ..
+	cd OXML_XXE && gitfp && cd ..
+	cd Tplmap && gitfp && cd ..
+	cd XSRFProbe && gitfp && python3 setup.py install && cd ..
+	cd Xss2png && gitfp && cd ..
+	cd XSSCrapy && gitfp && cd ..
+	cd XSStrike && gitfp && cd ..
+	cd CMSmap && gitfp && python3 setup.py install && cd ..
+cd -

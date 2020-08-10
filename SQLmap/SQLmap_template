@@ -1,0 +1,3 @@
+sqlmap -u "URL" --tamper xforwardedfor,varnish,space2comment,randomcomments,randomcase -vv --level 5 --risk 3 --batch --delay 0.3
+
+

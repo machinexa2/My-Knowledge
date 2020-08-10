@@ -1,0 +1,5 @@
+#COMMAND								#Description
+$(readlink -f $0 | xargs dirname)					Path of bash script
+grep -Fxvf smallfile bigfile						Subtrace smallfile from bigfile
+sed -e "s/\b\(.\)/\u\1/g" 						Capitalize Words
+tr [:upper:] [:lower:]							Lowercase Words

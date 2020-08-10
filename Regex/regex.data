@@ -1,0 +1,3 @@
+REGEXES							DESCRIPTION							COMMAND
+"[^\.\n]*((\.[^\.\n]*){1}$)"				Levels of subdomain where 1 is replaced. 1 == normal domain	egrep
+"([0-9]{1,3}[\.]){3}[0-9]{1,3}"				Ip address extraction						egrep
