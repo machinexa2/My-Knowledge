@@ -1,4 +1,4 @@
-#Installable
+# Installable
 go get -u -v github.com/tomnomnom/assetfinder
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
 GO111MODULE=on go get -u -v github.com/lc/subjs
@@ -14,7 +14,7 @@ go get -u -v github.com/haccer/subjack
 apt install ffuf sublist3r libldns-dev -y
 pip3 install dnsgen
 cargo install findomain
-#Github
+# Github
 cd /root/MachineYadav/Softwares/ 
 	cd Arjun && gitfp && cd ..
 	cd CORStest && gitfp && cd ..

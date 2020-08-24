@@ -1,8 +1,7 @@
-## Tamper Scripts:
-### General: xforwardedfor,varnish,space2comment,randomcase,randomcomments,between  
-### MySQL: greatest,commalesslimit,space2comment,symboliclogical,randomcase,randomcomments,equaltolike,between,xforwardedfor,varnish  
-### PostgreSQL: between,commalesslimit,greatest,randomcase,space2comment,substring2leftright,varnish,xforwardedfor  
-### MSSQL: bluecoat,plus2concat,randomcase,space2dash,space2mssqlblank,symboliclogical,varnish,xforwardedfor  
-### Oracle: between,greatest,randomcase,varnish,xforwardedfor  
-### SQLite: randomcase,varnish,xforwardedfor  
-
+# Tamper Scripts:
+General: xforwardedfor,varnish,space2comment,randomcase,randomcomments,between  
+MySQL: greatest,commalesslimit,space2comment,symboliclogical,randomcase,randomcomments,equaltolike,between,xforwardedfor,varnish  
+PostgreSQL: between,commalesslimit,greatest,randomcase,space2comment,substring2leftright,varnish,xforwardedfor  
+MSSQL: bluecoat,plus2concat,randomcase,space2dash,space2mssqlblank,symboliclogical,varnish,xforwardedfor  
+Oracle: between,greatest,randomcase,varnish,xforwardedfor  
+SQLite: randomcase,varnish,xforwardedfor
