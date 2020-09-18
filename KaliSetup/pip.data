@@ -1,0 +1,14 @@
+#!/bin/bash
+# Install python2 pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
+
+# Pip3 important modules
+pip3 install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt requests
+pip3 install twisted pathlib PyGithub asyncio aiohttp aiofiles mysql-connector
+pip3 install readline tqdm ciphey pika salt mechanize httpx jsbeautifier
+pip3 install requests_toolbelt
+
+# Pip important modules
+pip install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt 
+pip install tqdm requests twisted pathlib mechanize jsbeautifier
+pip install requests_toolbelt

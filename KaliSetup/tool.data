@@ -1,3 +1,5 @@
+SOFT='/root/MachineYadav/Softwares'
+
 # Installable
 go get -u -v github.com/tomnomnom/assetfinder
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
@@ -11,12 +13,15 @@ go get -u -v github.com/hakluke/hakrevdns
 go get -u -v github.com/hakluke/hakrawler
 go get -u -v github.com/anshumanbh/tko-subs
 go get -u -v github.com/haccer/subjack
-apt install ffuf sublist3r libldns-dev -y
+apt install ffuf sublist3r -y
 pip3 install dnsgen
 cargo install findomain
-# Github
-cd /root/MachineYadav/Softwares/ 
-	cd Arjun && gitfp && cd ..
+
+# Github Repositories
+CURRENT="`pwd`"
+cd $SOFT
+	#Should be replaced by git clone
+	cd Arjun && gitfp && cd .. 
 	cd CORStest && gitfp && cd ..
 	cd Dnsvalidator && gitfp && python3 setup.py install && cd .. 
 	cd Interlace && gitfp && python3 setup.py install && cd ..
@@ -30,4 +35,5 @@ cd /root/MachineYadav/Softwares/
 	cd XSSCrapy && gitfp && cd ..
 	cd XSStrike && gitfp && cd ..
 	cd CMSmap && gitfp && python3 setup.py install && cd ..
-cd -
+	# Should be replaced ends
+cd $CURRENT

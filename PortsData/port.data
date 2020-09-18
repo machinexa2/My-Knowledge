@@ -1,24 +1,26 @@
-#Port	Name		URI (not all URI exist :))
-21 	FTP		(ftp://)
-22 	SSH 	 	(ssh://)
-80	WebServer 	(http://)
-139	SMB		(smb://)
-443	WebServer 	(https://)
-445	SMB		(smb://)
-1433 	SQLServer	(sql://)
-1433	MSSQL		(mssql://)
-1521	OracleDB	(oracle://)
-2735	Docker		(docker://)
-2736	Docker		(docker://)
-3306	MySQL 		(mysql://)
-4369	Erlang PortMap	(epmd://)
-5432	Postgres	(postgres://)
-5433	Postgres	(postgres://)
-5671	AMPQ/RabbitMQ	(ampq://)
-5672	AMPQ/RabbitMQ	(ampq://)
-6379	Redis		(redis://)
-6443	Kubernetes	(kubernetes://)
-11211	Memcached	(memcached://)
-27017	MongoDB		(mongo://)
-27018	MongoDB		(mongo://)
-27019	MongoDB		(mongo://)
+#Port	Name		URI (not all URI exist :))	Protocol
+21 	FTP		(ftp://)			TCP
+22 	SSH 	 	(ssh://)			TCP	
+80	WebServer 	(http://)			TCP/UDP
+139	SMB		(smb://)			TCP
+161	SNMP		(snmp://)			UDP
+443	WebServer 	(https://)			TCP/UDP
+445	SMB		(smb://)			TCP
+1433 	SQLServer	(sql://)			TCP
+1433	MSSQL		(mssql://)			TCP
+1521	OracleDB	(oracle://)			TCP
+2735	Docker		(docker://)			TCP
+2736	Docker		(docker://)			TCP
+3306	MySQL 		(mysql://)			TCP
+4369	Erlang PortMap	(epmd://)			TCP
+5432	Postgres	(postgres://)			TCP
+5433	Postgres	(postgres://)			TCP	
+5671	AMPQ/RabbitMQ	(ampq://)			TCP
+5672	AMPQ/RabbitMQ	(ampq://)			TCP
+6379	Redis		(redis://)			TCP
+6443	Kubernetes	(kubernetes://)			TCP
+8983	Apache Solr	(solr://)			TCP
+11211	Memcached	(memcached://)			TCP
+27017	MongoDB		(mongo://)			TCP
+27018	MongoDB		(mongo://)			TCP
+27019	MongoDB		(mongo://)			TCP
