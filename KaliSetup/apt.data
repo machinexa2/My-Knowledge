@@ -1,9 +1,9 @@
 #!/bin/bash
 apt update && apt full-upgrade && apt autoremove -y
-apt install sudo python3 wget curl vim git pigz exiftool -y
-apt install x11-xserver-utils cron vim-gtk3 vim-scripts -y
-apt install apache2 mariadb-server php php-mysqli php-gd libapache2-mod-php -y
+apt install vim vim-gtk3 vim-scripts -y
+apt install sudo cron wget curl git pigz python3 exiftool x11-xserver-utils -y
+apt install apache2 nginx mariadb-server php php-mysqli php-gd libapache2-mod-php -y
 apt install php7.4-cli php7.4-curl php7.4-mysql php7.4-fpm php7.4-gd php7.4-xml php7.4-mbstring php7.4-zip php7.4-soap php7.4-dev -y
-apt install python3-requests-toolbelt python3-pyfiglet libpq-dev -y
-apt install libldns-dev libnode-dev libssl-dev node-gyp npm php7.4-dev -y
-apt install cargo libldns-dev libcurl4-openssl-dev libgraphviz-dev -y
+apt install postgresql postgresql-12 libpq-dev -y
+apt install nodejs libnode-dev node-gyp npm -y
+apt install cargo libldns-dev libcurl4-openssl-dev libgraphviz-dev libssl-dev libldns-dev -y
