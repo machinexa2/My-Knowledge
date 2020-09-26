@@ -1,3 +1,4 @@
-REGEXES							DESCRIPTION							COMMAND
-"[^\.\n]*((\.[^\.\n]*){1}$)"				Levels of subdomain where 1 is replaced. 1 == normal domain	egrep
-"([0-9]{1,3}[\.]){3}[0-9]{1,3}"				Ip address extraction						egrep
+REGEXES							DESCRIPTION				COMMAND		FLAGS		(LINE/WORD)
+"[^\.\n]*((\.[^\.\n]*){2}$)"				Third level domain 			egrep		-o (NO)		WORD BASED
+"(?:\w+(?:\.|\b)){2}(?=\.\w+(?: |$))\.\w+"		^ (with -o support & is better)		pgrep		-o (YES)	WORD BASED
+"([0-9]{1,3}[\.]){3}[0-9]{1,3}"				IP Address				egrep		-o (YES)	WORD BASED
