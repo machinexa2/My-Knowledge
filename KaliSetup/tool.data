@@ -1,6 +1,9 @@
+#!/bin/bash
 SOFT='/root/MachineYadav/Softwares'
+CURRENT="`pwd`"
 
 # Installable
+go get -u -v github.com/ffuf/ffuf
 go get -u -v github.com/tomnomnom/assetfinder
 go get -u -v github.com/anshumanbh/tko-subs
 go get -u -v github.com/tomnomnom/waybackurls
@@ -14,25 +17,99 @@ GO111MODULE=on go get -u -v github.com/lc/subjs
 GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
-apt install ffuf sublist3r -y; pip3 install dnsgen; cargo install findomain
+apt install sublist3r -y
+pip3 install dnsgen
+cargo install findomain
 
-# Github Repositories
-CURRENT="`pwd`"
 cd $SOFT
-	#Should be replaced by git clone
-	cd Arjun && gitfp && cd .. 
-	cd CORStest && gitfp && cd ..
-	cd Dnsvalidator && gitfp && python3 setup.py install && cd .. 
-	cd Interlace && gitfp && python3 setup.py install && cd ..
-	cd JS2PDFInjector && gitfp && cd ..
-	cd Massdns && gitfp && make && make install && cd ..
-	cd NoSQLMap && gitfp && cd ..
-	cd OXML_XXE && gitfp && cd ..
-	cd Tplmap && gitfp && cd ..
-	cd XSRFProbe && gitfp && python3 setup.py install && cd ..
-	cd Xss2png && gitfp && cd ..
-	cd XSSCrapy && gitfp && cd ..
-	cd XSStrike && gitfp && cd ..
-	cd CMSmap && gitfp && python3 setup.py install && cd ..
-	# Should be replaced ends
+	if [[ ! -d Arjun ]]; then
+		git clone https://github.com/s0md3v/Arjun.git
+	else
+		cd Arjun && gitfp && cd .. 
+	fi
+	if [[ ! -d Corsy ]]; then
+		git clone https://github.com/s0md3v/Corsy
+	else
+		cd Corsy && gitfp && cd ..
+	fi
+	if [[ ! -d dnsvalidator ]]; then
+		git clone https://github.com/vortexau/dnsvalidator.git
+	else
+		cd dnsvalidator && gitfp && python3 setup.py install && cd ..
+	fi
+	if [[ ! -d Interlace ]]; then
+		git clone https://github.com/codingo/Interlace
+	else
+		cd Interlace && gitfp && python3 setup.py install && cd ..
+	fi
+	if [[ ! -d massdns ]]; then
+		git clone https://github.com/blechschmidt/massdns.git
+	else
+		cd massdns && gitfp && make && make install && cd ..
+	fi
+	if [[ ! -d tplmap ]]; then
+		git clone https://github.com/epinna/tplmap.git
+	else
+		cd tplmap && gitfp && cd ..
+	fi
+	if [[ ! -d xss2png ]]; then
+		git clone https://github.com/vavkamil/xss2png.git
+	else
+		cd xss2png && gitfp && cd ..
+	fi
+	if [[ ! -d bucky ]]; then
+		git clone https://github.com/smaranchand/bucky.git
+	else
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d ysoserial ]]; then
+		git clone https://github.com/frohoff/ysoserial.git
+	else
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d dotdotpwn ]]; then
+		git clone https://github.com/wireghoul/dotdotpwn.git
+	else
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d PRET ]]; then
+		git clone https://github.com/RUB-NDS/PRET.git
+	else
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d gal ]]; then 
+		git clone https://github.com/YashGoti/gal.git
+	else 
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d HashPump ]]; then
+		git clone https://github.com/bwall/HashPump.git
+	else 
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d pspy ]]; then
+		git clone https://github.com/DominicBreuker/pspy.git
+	else
+		echo "DO STH"
+	fi
+	if [[ ! -d git-dumper ]]; then
+		git clone https://github.com/arthaud/git-dumper
+	else
+		echo "DO SOMETHING"
+	fi
+	if [[ ! -d drupwn ]]; then
+		git clone https://github.com/immunIT/drupwn
+	else
+		echo "DO STH"
+	fi
+	if [[ ! -d peass ]]; then
+		git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git peass
+	else
+		echo "do something"
+	fi
+	if [[ ! -d docem ]]; then
+		git clone https://github.com/whitel1st/docem.git
+	else
+		echo "dosth"
+	fi
 cd $CURRENT
