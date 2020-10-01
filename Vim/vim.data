@@ -1,5 +1,5 @@
 #COMMAND								Description
-
 :%sort u								Sort removing duplicate lines
 :%g/regex/d								Delete line matching regex
-:%s/regex/substitute/gc							Work like sed globally but with prompt 
+:%v/regex/d								Delete line not matching regex
+:%s/regex/substitute/gc							Replace globally but with prompt 
