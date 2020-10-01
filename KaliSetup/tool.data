@@ -113,3 +113,9 @@ cd $SOFT
 		echo "dosth"
 	fi
 cd $CURRENT
+#To Be Put
+#https://github.com/flipkart-incubator/Astra.git
+#https://github.com/ticarpi/jwt_tool
+#https://github.com/RhinoSecurityLabs/SleuthQL
+#https://github.com/jordanpotti/AWSBucketDump
+
