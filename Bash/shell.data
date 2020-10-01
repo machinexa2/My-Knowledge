@@ -1,7 +1,0 @@
-#COMMAND								Description
-$(readlink -f $0 | xargs dirname)					Path of bash script
-grep -Fxvf smallfile bigfile						Subtrace smallfile from bigfile
-sed -e "s/\b\(.\)/\u\1/g" 						Capitalize Words
-tr [:upper:] [:lower:]							Lowercase Words
-setcap -v cap_net_bind_service=+ep "$(readlink -f "$(which binary)")"	Binary able to run sudo without root perm
-

@@ -1,0 +1,6 @@
+#COMMAND								Description					Example
+$(readlink -f $0 | xargs dirname)					Path of program (no symlink)
+grep -Fxvf smallfile bigfile						Subtract smallfile from bigfile
+sed -e "s/\b\(.\)/\u\1/g" 						Capitalize Words
+tr [:upper:] [:lower:]							Lowercase Words
+setcap -v cap_net_bind_service=+ep "$(readlink -f "$(which binary)")"	Run sudo without root permisson			php -S 0.0.0.0:80
