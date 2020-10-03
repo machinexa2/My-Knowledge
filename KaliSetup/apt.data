@@ -11,6 +11,7 @@ apt install docker.io -y
 # Package manager
 apt install cargo -y
 apt install yarn npm  -y
+apt install composer -y
 
 # Languages
 apt install php php-mysqli php-gd php7.4-cli php7.4-curl php7.4-mysql php7.4-fpm -y

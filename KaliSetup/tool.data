@@ -18,7 +18,7 @@ GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
 apt install sublist3r -y
-pip3 install dnsgen
+pip3 install dnsgen stegcracker
 cargo install findomain
 
 cd $SOFT
