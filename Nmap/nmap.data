@@ -1,3 +1,3 @@
-# PORT	SCRIPT:DESCRIPTION	[SCRIPT:DESCRIPTION]
-139	smb-vuln*:SMB CVEs	smb-enum*:SMB Enum	smb-enum-shares/users.nse:Users/Shares SMB	smb*(all):Everything of SMB	
-445	smb-vuln*:SMB CVEs	smb-enum*:SMB Enum	smb-enum-users/shares.nse:Users/Shares SMB	smb*(all):Everything of SMB
+# PORT			SCRIPT:DESCRIPTION		[SCRIPT:DESCRIPTION]
+139			smb-vuln*:SMB CVEs		smb-enum*:SMB Enum	
+445			smb-vuln*:SMB CVEs		smb-enum*:SMB Enum
