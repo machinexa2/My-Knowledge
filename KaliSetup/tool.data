@@ -17,9 +17,9 @@ GO111MODULE=on go get -u -v github.com/lc/subjs
 GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
-apt install sublist3r -y
-pip3 install dnsgen stegcracker
-cargo install findomain
+apt install sublist3r steghide -y
+pip3 install dnsgen ciphey
+cargo install findomain RustKraken rustscan
 
 cd $SOFT
 	if [[ ! -d Arjun ]]; then
