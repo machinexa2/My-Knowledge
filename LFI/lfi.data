@@ -1,0 +1,9 @@
+# Files							Technology
+/etc/passwd						-		
+/etc/hosts						-
+/etc/motd						-
+/proc/self/environ					-
+/proc/self/cmdline					-
+/etc/php/7.?/apache2/php.ini				PHP, Apache2
+/etc/php/7.?/cli/php.ini				PHP, Apache2
+/*/lambda_function.py					AWS

@@ -13,4 +13,5 @@ My knowledge on small topics.. Help me exand my knowledge by submitting pull req
 * **[Rev. Shell Oneliners](https://github.com/machinexa2/My-Knowledge/tree/master/ReverseShell):** Rev shell oneliners
 * **[SQLMap Knowledge](https://github.com/machinexa2/My-Knowledge/tree/master/SQLmap):** SQLMap tamper scripts
 * **[Vim Commands](https://github.com/machinexa2/My-Knowledge/tree/master/Vim):** Vim commands
+* **[Vim Commands](https://github.com/machinexa2/My-Knowledge/tree/master/LFI):** Default LFI files
 
