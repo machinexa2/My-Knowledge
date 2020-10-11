@@ -9,6 +9,7 @@ go get -u -v github.com/anshumanbh/tko-subs
 go get -u -v github.com/tomnomnom/waybackurls
 go get -u -v github.com/tomnomnom/meg
 go get -u -v github.com/tomnomnom/gf
+go get -u -v github.com/tomnomnom/anew
 go get -u -v github.com/hakluke/hakrevdns
 go get -u -v github.com/hakluke/hakrawler
 go get -u -v github.com/anshumanbh/tko-subs
@@ -17,6 +18,7 @@ GO111MODULE=on go get -u -v github.com/lc/subjs
 GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
+GO111MODULE=on go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei && nuclei -update-templates
 apt install sublist3r steghide -y
 pip3 install dnsgen ciphey
 cargo install findomain RustKraken rustscan
@@ -60,59 +62,72 @@ cd $SOFT
 	if [[ ! -d bucky ]]; then
 		git clone https://github.com/smaranchand/bucky.git
 	else
-		echo "DO SOMETHING"
+		cd bucky && gitfp && cd ..
 	fi
 	if [[ ! -d ysoserial ]]; then
 		git clone https://github.com/frohoff/ysoserial.git
 	else
-		echo "DO SOMETHING"
+		cd ysoserial && gitfp && cd ..
 	fi
 	if [[ ! -d dotdotpwn ]]; then
 		git clone https://github.com/wireghoul/dotdotpwn.git
 	else
-		echo "DO SOMETHING"
+		cd dotdotpwn && gitfp && cd ..
 	fi
 	if [[ ! -d PRET ]]; then
 		git clone https://github.com/RUB-NDS/PRET.git
 	else
-		echo "DO SOMETHING"
+		cd PRET && gitfp && cd ..
 	fi
 	if [[ ! -d gal ]]; then 
 		git clone https://github.com/YashGoti/gal.git
 	else 
-		echo "DO SOMETHING"
+		cd gal && gitfp && cd ..
 	fi
 	if [[ ! -d HashPump ]]; then
 		git clone https://github.com/bwall/HashPump.git
 	else 
-		echo "DO SOMETHING"
+		cd HashPump && make && make install && cd ..
 	fi
 	if [[ ! -d pspy ]]; then
 		git clone https://github.com/DominicBreuker/pspy.git
 	else
-		echo "DO STH"
+		cd pspy && gitfp && cd ..
 	fi
 	if [[ ! -d git-dumper ]]; then
 		git clone https://github.com/arthaud/git-dumper
 	else
-		echo "DO SOMETHING"
+		cd git-dumper && gitfp && cd ..
 	fi
 	if [[ ! -d drupwn ]]; then
 		git clone https://github.com/immunIT/drupwn
 	else
-		echo "DO STH"
+		cd drupwn && gitfp && cd ..
 	fi
 	if [[ ! -d peass ]]; then
 		git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git peass
 	else
-		echo "do something"
+		cd peass && gitfp && cd ..
 	fi
 	if [[ ! -d docem ]]; then
 		git clone https://github.com/whitel1st/docem.git
 	else
-		echo "dosth"
+		cd docem && gitfp && cd ..
+	fi
+	if [[ ! -d FavFreak ]]; then
+		git clone https://github.com/devanshbatham/FavFreak
+	else
+		cd FavFreak && gitfp && cd ..
 	fi
 cd $CURRENT
+cd /var/www/html
+	if [[ ! -d B-XSSRF ]]; then
+		git clone https://github.com/SpiderMate/B-XSSRF
+	else
+		cd B-XSSRF && gitfp && cd ..
+	fi
+cd $CURRENT
+
 #To Be Put
 #https://github.com/flipkart-incubator/Astra.git
 #https://github.com/ticarpi/jwt_tool

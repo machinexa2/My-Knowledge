@@ -2,11 +2,11 @@
 apt update && apt full-upgrade -y
 
 # Softwares
+apt install docker.io bash qterminal -y
 apt install vim vim-gtk3 vim-scripts -y
-apt install apache2 nginx mariadb-server libapache2-mod-php -y
+apt install apache2 nginx libapache2-mod-php -y
 apt install sudo cron wget curl git pigz jq gron -y
 apt install python3 kazam exiftool x11-xserver-utils -y
-apt install docker.io -y
 
 # Package manager
 apt install cargo -y
@@ -14,15 +14,16 @@ apt install yarn npm  -y
 apt install composer -y
 
 # Languages
+apt install golang -y
+apt install nodejs libnode-dev node-gyp -y
 apt install php php-mysqli php-gd php7.4-cli php7.4-curl php7.4-mysql php7.4-fpm -y
 apt install php7.4-gd php7.4-xml php7.4-mbstring php7.4-zip php7.4-soap php7.4-dev php7.4-sqlite -y
-apt install nodejs libnode-dev node-gyp -y
-apt install golang -y
 
 # DBMS
+apt install mariadb-server -y 
 apt install sqlite sqlite3 -y
 apt install postgresql postgresql-12 libpq-dev -y
 
 # Other
-apt install libgtkglext1 -y
+apt install ccache libgtkglext1 -y
 apt install libldns-dev libcurl4-openssl-dev libgraphviz-dev libssl-dev libldns-dev -y
