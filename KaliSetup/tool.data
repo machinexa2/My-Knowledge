@@ -1,12 +1,14 @@
 #!/bin/bash
-# gitted and addbinary is alias and function respectively 
-
 source ~/.bash_profile
 source ~/.bash_aliases
 shopt -s expand_aliases
 
-SOFT="/root/MachineYadav/Softwares"
 CURRENT="`pwd`"
+SOFTWARES_PATH='/root/MachineYadav/Softwares'
+EXECUTABLE_PATH='/root/MachineYadav/My-Tools/MyBinaries/'
+
+alias gitted='git add . && git commit -m "`date +%r" "%x`" && git push -u origin master'
+addbinary(){ chmod +x "`pwd`/""$1" && ln -s "`pwd`/""$1" "$EXECUTABLE_PATH""$2"; }
 
 # Installable
 go get -u -v github.com/ffuf/ffuf
@@ -26,12 +28,11 @@ GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledn
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
 GO111MODULE=on go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei && nuclei -update-templates
 GO111MODULE=auto go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
-apt install sublist3r steghide -y
 pip3 install dnsgen ciphey
 cargo install findomain RustKraken rustscan
 npm install -g electron
 
-cd $SOFT
+cd $SOFTWARES_PATH
 	if [[ ! -d Arjun ]]; then
 		git clone https://github.com/s0md3v/Arjun.git
 	else

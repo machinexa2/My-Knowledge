@@ -7,7 +7,7 @@ apt install vim vim-gtk3 vim-scripts -y
 apt install apache2 nginx libapache2-mod-php -y
 apt install sudo cron wget curl git pigz jq gron -y
 apt install python3 kazam exiftool x11-xserver-utils -y
-apt install encfs -y
+apt install sublist3r steghide encfs -y
 
 # Package manager
 apt install cargo -y
