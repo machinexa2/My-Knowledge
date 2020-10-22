@@ -29,6 +29,7 @@ GO111MODULE=auto go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 apt install sublist3r steghide -y
 pip3 install dnsgen ciphey
 cargo install findomain RustKraken rustscan
+npm install -g electron
 
 cd $SOFT
 	if [[ ! -d Arjun ]]; then
