@@ -44,17 +44,17 @@ cd $SOFTWARES_PATH
 		cd Corsy && gitfp && cd ..
 	fi
 	if [[ ! -d dnsvalidator ]]; then
-		git clone https://github.com/vortexau/dnsvalidator.git
+		git clone https://github.com/vortexau/dnsvalidator.git && cd dnsvalidator && python3 setup.py install && cd ..
 	else
 		cd dnsvalidator && gitfp && python3 setup.py install && cd ..
 	fi
 	if [[ ! -d Interlace ]]; then
-		git clone https://github.com/codingo/Interlace
+		git clone https://github.com/codingo/Interlace && cd Interlace && python3 setup.py install && cd ..
 	else
 		cd Interlace && gitfp && python3 setup.py install && cd ..
 	fi
 	if [[ ! -d massdns ]]; then
-		git clone https://github.com/blechschmidt/massdns.git
+		git clone https://github.com/blechschmidt/massdns.git && cd massdns && make && make install && cd ..
 	else
 		cd massdns && gitfp && make && make install && cd ..
 	fi
@@ -74,7 +74,8 @@ cd $SOFTWARES_PATH
 		cd bucky && gitfp && cd ..
 	fi
 	if [[ ! -d ysoserial ]]; then
-		git clone https://github.com/frohoff/ysoserial.git
+		git clone https://github.com/frohoff/ysoserial.git;
+		cd ysoserial; mv ysoserial*.jar ysoserial.jar; addbinary ysoserial.jar ysoserial && cd ..
 	else
 		cd ysoserial && gitfp && cd ..
 	fi
@@ -94,9 +95,9 @@ cd $SOFTWARES_PATH
 		cd gal && gitfp && cd ..
 	fi
 	if [[ ! -d HashPump ]]; then
-		git clone https://github.com/bwall/HashPump.git
+		git clone https://github.com/bwall/HashPump.git && cd HashPump && make && make install && cd ..
 	else 
-		cd HashPump && make && make install && cd ..
+		cd HashPump && gitfp && make && make install && cd ..
 	fi
 	if [[ ! -d pspy ]]; then
 		git clone https://github.com/DominicBreuker/pspy.git
@@ -113,10 +114,10 @@ cd $SOFTWARES_PATH
 	else
 		cd drupwn && gitfp && cd ..
 	fi
-	if [[ ! -d peass ]]; then
-		git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git peass
+	if [[ ! -d peas ]]; then
+		git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git peas
 	else
-		cd peass && gitfp && cd ..
+		cd peas && gitfp && cd ..
 	fi
 	if [[ ! -d docem ]]; then
 		git clone https://github.com/whitel1st/docem.git
@@ -124,10 +125,14 @@ cd $SOFTWARES_PATH
 		cd docem && gitfp && cd ..
 	fi
 	if [[ ! -d FavFreak ]]; then
-		git clone https://github.com/devanshbatham/FavFreak
+		git clone https://github.com/devanshbatham/FavFreak && addbinary favfreak.py favfreak && cd ..
 	else
-		cd FavFreak && gitfp && addbinary favfreak.py FavFreak && cd ..
+		cd FavFreak && gitfp && addbinary favfreak.py favfreak && cd ..
 	fi
+	if [[ ! -d squidclient ]]; then
+		git clone https://github.com/limitedeternity/squidclient
+	else
+		cd squidclient && cargo build --release && (cd target/release && addbinary squidclient squidclient) && cd ..
 cd $CURRENT
 cd /var/www/html
 	if [[ ! -d B-XSSRF ]]; then
