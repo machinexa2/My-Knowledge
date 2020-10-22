@@ -1,5 +1,11 @@
 #!/bin/bash
-SOFT='/root/MachineYadav/Softwares'
+# gitted and addbinary is alias and function respectively 
+
+source ~/.bash_profile
+source ~/.bash_aliases
+shopt -s expand_aliases
+
+SOFT="/root/MachineYadav/Softwares"
 CURRENT="`pwd`"
 
 # Installable
@@ -19,6 +25,7 @@ GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
 GO111MODULE=on go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei && nuclei -update-templates
+GO111MODULE=auto go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 apt install sublist3r steghide -y
 pip3 install dnsgen ciphey
 cargo install findomain RustKraken rustscan
@@ -117,7 +124,7 @@ cd $SOFT
 	if [[ ! -d FavFreak ]]; then
 		git clone https://github.com/devanshbatham/FavFreak
 	else
-		cd FavFreak && gitfp && cd ..
+		cd FavFreak && gitfp && addbinary favfreak.py FavFreak && cd ..
 	fi
 cd $CURRENT
 cd /var/www/html

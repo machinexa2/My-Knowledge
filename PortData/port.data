@@ -1,26 +1,28 @@
-#Port	Name		URI (not all URI exist :))	Protocol
-21 	FTP		(ftp://)			TCP
-22 	SSH 	 	(ssh://)			TCP	
-80	WebServer 	(http://)			TCP/UDP
-139	SMB		(smb://)			TCP
-161	SNMP		(snmp://)			UDP
-443	WebServer 	(https://)			TCP/UDP
-445	SMB		(smb://)			TCP
-1433 	SQLServer	(sql://)			TCP
-1433	MSSQL		(mssql://)			TCP
-1521	OracleDB	(oracle://)			TCP
-2735	Docker		(docker://)			TCP
-2736	Docker		(docker://)			TCP
-3306	MySQL 		(mysql://)			TCP
-4369	Erlang PortMap	(epmd://)			TCP
-5432	Postgres	(postgres://)			TCP
-5433	Postgres	(postgres://)			TCP	
-5671	AMPQ/RabbitMQ	(ampq://)			TCP
-5672	AMPQ/RabbitMQ	(ampq://)			TCP
-6379	Redis		(redis://)			TCP
-6443	Kubernetes	(kubernetes://)			TCP
-8983	Apache Solr	(solr://)			TCP
-11211	Memcached	(memcached://)			TCP
-27017	MongoDB		(mongo://)			TCP
-27018	MongoDB		(mongo://)			TCP
-27019	MongoDB		(mongo://)			TCP
+#Port	Name		URI				Protocol		Status*				Client*
+21 	FTP		(ftp://)			TCP			Public				ftp,lftp,filezilla
+22 	SSH 	 	(ssh://)			TCP			Public				ssh
+80	WebServer 	(http://)			TCP/UDP			Public				HTTP client(browser,curl)
+139	SMB		(smb://)			TCP			Public				smbclient
+161	SNMP		(snmp://)			UDP			Public				?
+443	WebServer 	(https://)			TCP/UDP			Public				HTTP client(browser,curl)
+445	SMB		(smb://)			TCP			Pubilc				smbclient
+873	Rsync		(rsync://)			TCP			Public				?
+1433 	SQLServer	(sql://)			TCP			Public				?
+1433	MSSQL		(mssql://)			TCP			?				?
+1521	OracleDB	(oracle://)			TCP			?				?
+2735	Docker		(docker://)			TCP			Private|Public			docker
+2736	Docker		(docker://)			TCP			Private|Public			docker
+3306	MySQL 		(mysql://)			TCP			Public				mysql,mysqldump
+4369	Erlang PortMap	(epmd://)			TCP			Public				?
+4566	Amazon DynamoDB	(dynamodb://)			TCP			Private				HTTP client(browser, curl)
+5432	Postgres	(postgres://)			TCP			?				?
+5433	Postgres	(postgres://)			TCP			?				?
+5671	AMPQ/RabbitMQ	(ampq://)			TCP			Public				?
+5672	AMPQ/RabbitMQ	(ampq://)			TCP			Public				?
+6379	Redis		(redis://)			TCP			Public|Private			?
+6443	Kubernetes	(kubernetes://)			TCP			?				?
+8983	Apache Solr	(solr://)			TCP			Public|Private			HTTP client(browser, curl)
+11211	Memcached	(memcached://)			TCP			Public|Private			telnet, nc, PHP code(with auth)
+27017	MongoDB		(mongo://)			TCP			?				?
+27018	MongoDB		(mongo://)			TCP			?				?
+27019	MongoDB		(mongo://)			TCP			?				?

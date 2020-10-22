@@ -3,3 +3,10 @@
 :%g/regex/d								Delete line matching regex
 :%v/regex/d								Delete line not matching regex
 :%s/regex/substitute/gc							Replace globally but with prompt 
+:%!cmd									Pipe cur. buf to cmd"s stdin and replace cbuf with cmd's stdout
+:sp									Split a file in two equal horizontal halves
+:vs									Split a file in two equal vertical halves
+
+#SHORTCUT								Description
+dt <cmd>								Delete everything upto that character excluding that character
+df <cmd>								Delete everything upto that character excluding that character
