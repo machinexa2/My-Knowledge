@@ -22,6 +22,7 @@ go get -u -v github.com/hakluke/hakrevdns
 go get -u -v github.com/hakluke/hakrawler
 go get -u -v github.com/anshumanbh/tko-subs
 go get -u -v github.com/haccer/subjack
+go get -u -v -t -d github.com/tebeka/selenium
 GO111MODULE=on go get -u -v github.com/lc/subjs
 GO111MODULE=on go get -u -v github.com/lc/gau
 GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
