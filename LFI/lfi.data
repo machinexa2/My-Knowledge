@@ -6,5 +6,5 @@
 /proc/self/cmdline					-
 /etc/php/7.?/apache2/php.ini				PHP, Apache2
 /etc/php/7.?/cli/php.ini				PHP, Apache2
-/*/lambda_function.py					AWS Lambda
-s3.amazonaws.com/shell/					AWS DynamoDB
+/*/lambda_function.py					AWS Lambda/Amazon
+s3.amazonaws.com/shell/					AWS DynamoDB/Amazon

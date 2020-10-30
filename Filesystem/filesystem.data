@@ -1,0 +1,8 @@
+# Files						Description
+/etc/passwd					Users and Groups data
+/etc/hosts					DNS Records
+/proc/self/environ				Environment variables
+/proc/self/cmdline				Cmdline arguments
+/proc/sys/vm/swappiness				Swappiness status
+/sys/class/backlight/acpi_video0/brightness	Brightness status
+

@@ -1,4 +1,4 @@
-#HASH		TYPE		FILE(OPTIONAL)		HASHCATMODE
+#HASH		TYPE		FILE(OPTIONAL)		HASHCAT MODE
 $1$		MD5		/etc/shadow
 $2$ $2a$	Blowfish	/etc/shadow
 $5$		SHA-256		/etc/shadow		

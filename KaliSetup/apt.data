@@ -4,11 +4,20 @@ apt update && apt full-upgrade -y
 # Softwares
 apt install docker.io bash qterminal -y
 apt install vim vim-gtk3 vim-scripts -y
+apt install sublist3r steghide encfs exiftool -y
+apt install sudo cron wget curl pigz jq gron -y
+apt install python3 kazam x11-xserver-utils -y
+apt install glances filezilla lftp remmina openssh-server -y
+
+# Web Server & Browser
 apt install apache2 nginx libapache2-mod-php -y
-apt install sudo cron wget curl git pigz jq gron -y
-apt install python3 kazam exiftool x11-xserver-utils -y
-apt install sublist3r steghide encfs w3m -y
-apt install stterm qterminal glances -y
+apt install w3m -y
+
+# Version Control System
+apt install tig git -y
+
+# Terminal Emulator
+apt install stterm qterminal tmux -y
 
 # Package manager
 apt install cargo -y
