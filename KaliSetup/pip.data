@@ -7,7 +7,7 @@ pip3 install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt pyfiglet
 pip3 install twisted pathlib PyGithub asyncio aiohttp aiofiles mysql-connector
 pip3 install readline tqdm ciphey pika salt mechanize httpx jsbeautifier
 pip3 install requests_toolbelt grpcio pysqlcipher3 requests requests_toolbelt
-pip3 install veryprettytable pysocks pyngrok perfplot
+pip3 install veryprettytable pysocks pyngrok perfplot memory_profiler
 
 # Python2 modules
 pip install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt 

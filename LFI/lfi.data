@@ -7,4 +7,7 @@
 /etc/php/7.?/apache2/php.ini				PHP, Apache2
 /etc/php/7.?/cli/php.ini				PHP, Apache2
 /*/lambda_function.py					AWS Lambda/Amazon
-s3.amazonaws.com/shell/					AWS DynamoDB/Amazon
+/*/shell/						AWS DynamoDB/Amazon
+/etc/f5-release						BigIP F5
+/config/bigip.license					BigIP F5
+
