@@ -5,7 +5,7 @@ My knowledge on hacking, programming and sysadmin.. Help me exand my knowledge b
 * **[Bash Commands](https://github.com/machinexa2/My-Knowledge/tree/master/Bash):** Useful shell commands
 * **[Favicon Fingerprints](https://github.com/machinexa2/My-Knowledge/tree/master/Bash):** Favicon data
 * **[Hash Fingerprints](https://github.com/machinexa2/My-Knowledge/tree/master/Hash):** Hash data
-* **[Kali Setup](https://github.com/machinexa2/My-Knowledge/tree/master/KaliSetup):** :zap: :zap: :zap: Setup Kali instantly :zap: :zap: :zap:
+* **[Kali Setup](https://github.com/machinexa2/My-Knowledge/tree/master/KaliSetup):** :zap: :zap: Setup Kali instantly :zap: :zap:
 * **[MSFVenom Commands](https://github.com/machinexa2/My-Knowledge/tree/master/MSFVenom):** All msfvenom commands
 * **[Nmap NSEs](https://github.com/machinexa2/My-Knowledge/tree/master/Nmap):** All nmap NSEs for specific port
 * **[Port Fingerprints](https://github.com/machinexa2/My-Knowledge/tree/master/PortData):** Port fingerprints
@@ -13,5 +13,5 @@ My knowledge on hacking, programming and sysadmin.. Help me exand my knowledge b
 * **[Rev. Shell Oneliners](https://github.com/machinexa2/My-Knowledge/tree/master/ReverseShell):** Rev shell oneliners
 * **[SQLMap Knowledge](https://github.com/machinexa2/My-Knowledge/tree/master/SQLmap):** SQLMap tamper scripts
 * **[Vim Commands](https://github.com/machinexa2/My-Knowledge/tree/master/Vim):** Vim commands
-* **[Vim Commands](https://github.com/machinexa2/My-Knowledge/tree/master/LFI):** Default LFI files
+* **[LFI Files](https://github.com/machinexa2/My-Knowledge/tree/master/LFI):** Default LFI files
 
