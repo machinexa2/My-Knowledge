@@ -10,6 +10,7 @@ EXECUTABLE_PATH='/root/MachineYadav/My-Tools/MyBinaries/'
 
 alias gitted='git add . && git commit -m "`date +%r" "%x`" && git push -u origin master'
 addbinary(){ chmod +x "`pwd`/""$1" && ln -s "`pwd`/""$1" "$EXECUTABLE_PATH""$2"; }
+mkdir $EXECUTABLE_PATH 2>/dev/null
 
 # Installable
 go get -u -v github.com/ffuf/ffuf
