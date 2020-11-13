@@ -1,12 +1,15 @@
 #!/bin/bash
 apt update && apt full-upgrade -y
 
+# General
+apt install feh mpv kazam evince -y
+
 # Softwares
-apt install docker.io bash qterminal -y
 apt install vim vim-gtk3 vim-scripts -y
+apt install docker.io docker-compose bash -y
 apt install sublist3r steghide encfs exiftool -y
-apt install sudo cron wget curl pigz jq gron sct -y
-apt install python2 python3 kazam x11-xserver-utils -y
+apt install sudo cron wget curl pigz jq gron sct xclip -y
+apt install python2 python3 x11-xserver-utils -y
 apt install glances filezilla lftp remmina openssh-server -y
 
 # Web Server & Browser

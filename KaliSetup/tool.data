@@ -144,6 +144,12 @@ cd $SOFTWARES_PATH
 	else
 		(cd squidclient && gitfp && cargo build --release && cd target/release && addbinary squidclient squidclient)
 	fi
+	if [[ !-d Nuitka ]]; then
+		git clone https://github.com/Nuitka/Nuitka
+		(cd Nuitka && python3 setup.py install)
+	else
+		(cd Nuitka && gitfp && python3 setup.py install)
+	fi
 cd $CURRENT
 cd /var/www/html
 	if [[ ! -d B-XSSRF ]]; then
