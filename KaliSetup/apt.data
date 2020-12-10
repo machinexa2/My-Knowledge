@@ -6,11 +6,14 @@ apt install feh mpv kazam evince -y
 
 # Softwares
 apt install vim vim-gtk3 vim-scripts -y
-apt install docker.io docker-compose bash -y
-apt install sublist3r steghide encfs exiftool -y
+apt install docker.io docker-compose bash zsh -y
 apt install sudo cron wget curl pigz jq gron sct xclip -y
-apt install python2 python3 x11-xserver-utils -y
+apt install python2 python3 x11-xserver-utils tor torbrowser-launcher -y
 apt install glances filezilla lftp remmina openssh-server -y
+apt install pydf bmon iftop htop encfs -y
+
+# CTF/BugBounty
+apt install sublist3r steghide exiftool rlwrap -y
 
 # Web Server & Browser
 apt install w3m -y

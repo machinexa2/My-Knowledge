@@ -1,13 +1,13 @@
-# Files							Technology
-/etc/passwd						-		
-/etc/hosts						-
-/etc/motd						-
-/proc/self/environ					-
-/proc/self/cmdline					-
-/etc/php/7.?/apache2/php.ini				PHP, Apache2
-/etc/php/7.?/cli/php.ini				PHP, Apache2
-/*/lambda_function.py					AWS Lambda/Amazon
-/*/shell/						AWS DynamoDB/Amazon
-/etc/f5-release						BigIP F5
-/config/bigip.license					BigIP F5
-
+# Files							Technology					Usage (Optional)
+/etc/passwd						-						Info Disclosure
+/etc/hosts						-						Info Disclosure
+/etc/motd						-						
+/proc/self/environ					-						Info Disclosure
+/proc/self/cmdline					-						Info Disclosure
+/etc/php/7.?/apache2/php.ini				PHP, Apache2					Info Disclosure
+/etc/php/7.?/cli/php.ini				PHP, Apache2					Info Disclosure
+/*/lambda_function.py					AWS Lambda/Amazon				Source Code Disclosure
+/etc/f5-release						BigIP F5					Info Disclosure
+/config/bigip.license					BigIP F5					Info Disclosure
+/var/log/auth.log					OpenSSH						Log Poisioning
+/var/log/vsftpd.log					VSFTPD						Log Poisioning

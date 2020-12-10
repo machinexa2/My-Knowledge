@@ -8,8 +8,8 @@ CURRENT="`pwd`"
 SOFTWARES_PATH='/root/MachineYadav/Softwares'
 EXECUTABLE_PATH='/root/MachineYadav/My-Tools/MyBinaries/'
 
+addbinary(){ chmod +x "`pwd`/""$1" && ln -nsf "`pwd`/""$1" "$EXECUTABLE_PATH""$2"; }
 alias gitted='git add . && git commit -m "`date +%r" "%x`" && git push -u origin master'
-addbinary(){ chmod +x "`pwd`/""$1" && ln -s "`pwd`/""$1" "$EXECUTABLE_PATH""$2"; }
 mkdir $EXECUTABLE_PATH 2>/dev/null
 
 # Installable
@@ -144,13 +144,23 @@ cd $SOFTWARES_PATH
 	else
 		(cd squidclient && gitfp && cargo build --release && cd target/release && addbinary squidclient squidclient)
 	fi
-	if [[ !-d Nuitka ]]; then
+	if [[ ! -d Nuitka ]]; then
 		git clone https://github.com/Nuitka/Nuitka
 		(cd Nuitka && python3 setup.py install)
 	else
 		(cd Nuitka && gitfp && python3 setup.py install)
 	fi
+	if [[ ! -d contactsh ]]; then
+		git clone https://github.com/EdOverflow/contact.sh contactsh
+		(cd contactsh && addbinary contact.sh contact.sh)
+	else
+		(cd contactsh && gitfp && addbinary contact.sh contact.sh)
+	fi
 cd $CURRENT
+
+# Other
+curl https://raw.githubusercontent.com/sensepost/autoDANE/master/software/tomcat_check/tomcat-scan.nse -o '/usr/share/nmap/scripts/tomcat-scan.nse'
+
 cd /var/www/html
 	if [[ ! -d B-XSSRF ]]; then
 		git clone https://github.com/SpiderMate/B-XSSRF
@@ -164,5 +174,3 @@ cd $CURRENT
 #https://github.com/ticarpi/jwt_tool
 #https://github.com/RhinoSecurityLabs/SleuthQL
 #https://github.com/jordanpotti/AWSBucketDump
-
-

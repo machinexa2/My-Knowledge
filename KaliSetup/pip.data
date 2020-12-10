@@ -3,11 +3,11 @@
 #curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
 
 # Python3 modules
+pip3 install requests requests_toolbelt pybase64
 pip3 install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt pyfiglet
 pip3 install twisted pathlib PyGithub asyncio aiohttp aiofiles mysql-connector
-pip3 install readline tqdm ciphey pika salt mechanize httpx jsbeautifier
-pip3 install requests_toolbelt grpcio psycopg2-binary
-pip3 install faster_than_requests requests requests_toolbelt
+pip3 install readline tqdm ciphey pika salt mechanize jsbeautifier grpcio
+pip3 install psycopg2-binary httpx faster_than_requests
 pip3 install veryprettytable pysocks pyngrok perfplot memory_profiler
 
 # Python2 modules
