@@ -5,6 +5,7 @@ apt update && apt full-upgrade -y
 apt install feh mpv kazam evince -y
 
 # Softwares
+apt install apt-file tig git emscripten -y
 apt install vim vim-gtk3 vim-scripts -y
 apt install docker.io docker-compose bash zsh -y
 apt install sudo cron wget curl pigz jq gron sct xclip -y
@@ -19,9 +20,6 @@ apt install sublist3r steghide exiftool rlwrap -y
 apt install w3m -y
 apt install apache2 nginx libapache2-mod-php -y
 
-# Version Control System
-apt install tig git -y
-
 # Terminal Emulator
 apt install stterm qterminal tmux -y
 
@@ -35,6 +33,7 @@ apt install rbenv -y
 
 # Languages
 apt install golang -y
+apt install cpp-10 gcc g++ ccache clang-11 llvm-11 -y
 apt install nodejs libnode-dev node-gyp -y
 apt install php php-mysqli php-gd php7.4-cli php7.4-curl php7.4-mysql php7.4-fpm -y
 apt install php7.4-gd php7.4-xml php7.4-mbstring php7.4-zip php7.4-soap php7.4-dev php7.4-sqlite -y
@@ -45,5 +44,5 @@ apt install sqlite sqlite3 -y
 apt install postgresql postgresql-12 libpq-dev -y
 
 # Other
-apt install ccache libgtkglext1 -y
+apt install libncurses5-dev libncursesw5-dev libbsd-dev libgtkglext1 -y
 apt install libldns-dev libcurl4-openssl-dev libgraphviz-dev libssl-dev libldns-dev -y
