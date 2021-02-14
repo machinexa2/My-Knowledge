@@ -15,4 +15,5 @@ My knowledge on hacking, programming and sysadmin.. Help me exand my knowledge b
 * **[Vim Commands](https://github.com/machinexa2/My-Knowledge/tree/master/Vim):** Vim commands
 * **[LFI Files](https://github.com/machinexa2/My-Knowledge/tree/master/LFI):** Default LFI files
 * **[Linux Filesys Files](https://github.com/machinexa2/My-Knowledge/tree/master/LFI):** Similar to LFI files but for Linux
+* **[OpenSMTPD Commands](https://github.com/machinexa2/My-Knowledge/tree/master/OpenSMTPD):** List of commands of OpenSMTPD
 

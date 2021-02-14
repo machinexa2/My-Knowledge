@@ -3,14 +3,21 @@
 #curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py && rm get-pip.py
 
 # Python3 modules
-pip3 install requests requests_toolbelt pybase64
-pip3 install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt pyfiglet
-pip3 install twisted pathlib PyGithub asyncio aiohttp aiofiles mysql-connector
-pip3 install readline tqdm ciphey pika salt mechanize jsbeautifier grpcio
-pip3 install psycopg2-binary httpx faster_than_requests
-pip3 install veryprettytable pysocks pyngrok perfplot memory_profiler
+pip3 install --upgrade asyncio aiohttp aiofiles aiosonic
+pip3 install --upgrade requests requests_toolbelt httpx faster_than_requests pycurl
+pip3 install --upgrade twisted dnspython bs4 tornado scrapy
+pip3 install --upgrade wheel setuptools pathlib readline twine netaddr rich
+pip3 install --upgrade pybase64 simplejson scrypt pyperclip pyfiglet PyGithub
+pip3 install --upgrade mysql-connector pymssql
+pip3 install --upgrade tqdm pika salt jsbeautifier grpcio pyngrok
+pip3 install --upgrade veryprettytable pysocks perfplot memory_profiler
+pip3 install --upgrade bumpversion interruptingcow pipdeptree pip-autoremove
+pip3 install --upgrade dbus-python gobject PyGObject
 
 # Python2 modules
-pip install wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt 
-pip install tqdm requests twisted pathlib mechanize jsbeautifier
-pip install requests_toolbelt veryprettytable pysocks
+#pip install --upgrade wheel setuptools tornado bs4 netaddr pycurl scrapy scrypt 
+#pip install --upgrade tqdm twisted pathlib mechanize jsbeautifier twine
+#pip install --upgrade requests requests_toolbelt veryprettytable pysocks
+
+# CTF Packages (could be present in tool.data)
+pip3 install --upgrade pwntools ciphey sslyze name-that-hash

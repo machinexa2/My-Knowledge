@@ -11,3 +11,4 @@
 /config/bigip.license					BigIP F5					Info Disclosure
 /var/log/auth.log					OpenSSH						Log Poisioning
 /var/log/vsftpd.log					VSFTPD						Log Poisioning
+/var/log/nginx/access.log				Nginx						Log Poisioning
