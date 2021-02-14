@@ -10,6 +10,7 @@ apt install sudo cron wget curl pigz jq gron sct xclip -y
 apt install python2 python3 x11-xserver-utils tor torbrowser-launcher -y
 apt install pydf bmon iftop htop encfs telnet -y
 apt install glances filezilla lftp remmina openssh-server simplescreenrecorder -y
+apt install freetds-dev -y
 
 # Building
 apt install make automake libtool scons -y
