@@ -52,4 +52,4 @@ apt install sqlcipher libsqlite3-dev -y
 apt install libncurses5-dev libncursesw5-dev libbsd-dev libgtkglext1 libevent-dev -y
 apt install libldns-dev libcurl4-openssl-dev libgraphviz-dev libssl-dev libldns-dev -y
 apt install libsecret-1-dev libglib2.0-dev libgpgme-dev libcairo2-dev libjpeg-dev libgif-dev -y
-apt install libdbus-glib-1-dev libgirepository1.0-dev -y
+apt install libdbus-glib-1-dev libgirepository1.0-dev libboost-all-dev -y
